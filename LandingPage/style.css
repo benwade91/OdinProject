@@ -1,0 +1,131 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+nav{
+    background-color: #1f2937;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.headerLogo{
+    font-size: 24px;
+}
+
+.headerLinks{
+    height: 100%;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.headerLinks a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #e5e7eb;
+}
+.hero{
+    display: flex;
+    padding: 14vh 10vw;
+    background-color: #1f2937;
+    font-size: 18px;
+
+}
+.heroText{
+    width: 45%;
+    padding-right: 5%;
+    color: #e5e7eb;
+}
+.heroMain{
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 800;
+}
+.heroText button{
+    background-color: #3882f6;
+    color: #fff;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.heroImage{
+    width: 45%;
+    height: 250px;
+    background-color: grey;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.infoHeader{
+    text-align: center;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 800;
+}
+.cellContainer{
+    display: flex;
+    justify-content: center;
+}
+.infoCell{
+    width: 150px;
+    margin: 20px 30px;
+    text-align: center;
+}
+.infoImage{
+    height: 150px;
+    width: 150px;
+    border: 5px solid;
+    border-radius: 15px;
+    border-color: #3882f6;
+}
+.quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+    padding: 10vh 0 5vh;
+}
+.quote p{
+    width: 60vw;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1f2937;
+    padding: 0;
+}
+.quote span{
+    margin: -5vh 25vw 10vh auto;
+    font-weight: 700;
+}
+.callToAction{
+    background-color: #3882f6;
+    color: #f9faf8;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 13vh 10vw;
+    border-radius: 10px;
+    padding: 25px;
+}
+.ctaButton{
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: #f9faf8;
+    border-color: #f9faf8;
+    border: 3px solid;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    height: 70px;
+}
