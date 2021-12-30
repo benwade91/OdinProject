@@ -3,8 +3,7 @@ const options = ['ROCK', 'PAPER', 'SCISSORS'];
 let userScore = 0
 let gameTurn = 1
 
-function turn() {
-    let rawUserMove = prompt('Rock, paper or scissors?')
+function turn(rawUserMove) {
     const computerMove = options[Math.floor(Math.random() * options.length)]
     userMove = rawUserMove.toUpperCase()
     if (!options.includes(userMove)) {
@@ -32,5 +31,19 @@ const game = (turns) => {
     }
     alert(`Your final score is ${userScore}`)
 }
+const startBtn = document.querySelector('#start');
+const gameSelections = document.querySelectorAll('.gameImg');
 
-game(5)
+gameSelections.forEach((button) => {
+    button.addEventListener('click', () => {
+        console.log(turn(button.id));
+    });
+});
+
+startBtn.addEventListener('click', () => {
+    console.log('clicked');
+    gameSelections.forEach((button)=>{
+        button.classList.remove('none')
+    })
+})
+// game(5)

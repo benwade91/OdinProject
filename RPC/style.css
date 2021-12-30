@@ -1,0 +1,17 @@
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gameImg{
+    width: 30%;
+}
+
+.none{
+    display: none;
+}
+
+.startContainer{
+    text-align: center;   
+}
