@@ -8,10 +8,24 @@
     width: 30%;
 }
 
-.none{
-    display: none;
-}
 
 .startContainer{
     text-align: center;   
+}
+
+.scoreBoard{
+    display: flex;
+    justify-content: space-evenly;
+}
+.gameMessage{
+    text-align: center;
+}
+
+#start:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+.none{
+    display: none;
 }
