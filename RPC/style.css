@@ -1,31 +1,35 @@
-.container{
+.container {
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
 }
 
-.gameImg{
+.gameImg {
     width: 30%;
 }
 
 
-.startContainer{
-    text-align: center;   
-}
-
-.scoreBoard{
-    display: flex;
-    justify-content: space-evenly;
-}
-.gameMessage{
+.startContainer {
     text-align: center;
 }
 
-#start:hover{
+.scoreBoard {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gameMessage {
+    text-align: center;
+}
+
+#start {
     text-decoration: underline;
+}
+
+#start:hover {
     color: red;
 }
 
-.none{
+.none {
     display: none;
 }
