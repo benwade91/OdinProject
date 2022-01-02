@@ -10,7 +10,8 @@
 
 
 .startContainer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .scoreBoard {
@@ -23,10 +24,13 @@
 }
 
 #start {
-    text-decoration: underline;
+    border: 3px solid black;
+    padding: 3px;
 }
 
 #start:hover {
+    text-decoration: underline;
+    border: 3px solid red;
     color: red;
 }
 
