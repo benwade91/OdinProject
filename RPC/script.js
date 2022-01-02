@@ -3,6 +3,10 @@ const options = ['rock', 'paper', 'scissors'];
 let userScore = 0
 let gameTurn = 5
 
+const startBtn = document.querySelector('#start');
+const restartBtn = document.querySelector('#restart');
+const gameSelections = document.querySelectorAll('.gameImg');
+
 function turn(userMove) {
     const computerMove = options[Math.floor(Math.random() * options.length)]
     let message = ''
@@ -28,9 +32,10 @@ const updateScore = (message, score) => {
     document.querySelector('.gameMessage').innerHTML = `<h4>${message}</h4>`
     if (gameTurn === 0) {
         gameSelections.forEach((button) => {
-            button.classList.add('none')
+            button.classList.add('none');
         });
-        document.querySelector('.scoreBoard').innerHTML = `<h1>Final Score: ${score}</h1>`
+        document.querySelector('.scoreBoard').innerHTML = `<h1>Final Score: ${score}</h1>`;
+        restartBtn.classList.remove('none');
     }
 }
 
@@ -42,9 +47,6 @@ const startGame = () => {
     document.querySelector('.scoreBoard').classList.remove('none')
 }
 
-const startBtn = document.querySelector('#start');
-const gameSelections = document.querySelectorAll('.gameImg');
-
 gameSelections.forEach((button) => {
     button.addEventListener('click', () => {
         turn(button.id);
@@ -52,5 +54,13 @@ gameSelections.forEach((button) => {
 });
 
 startBtn.addEventListener('click', () => {
+    startGame()
+})
+
+restartBtn.addEventListener('click', () => {
+    restartBtn.classList.add('none');
+    userScore = 0
+    gameTurn = 5
+    updateScore('', userScore)
     startGame()
 })

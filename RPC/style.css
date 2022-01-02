@@ -6,8 +6,12 @@
 
 .gameImg {
     width: 30%;
+    transition: opacity 0.5s;
 }
 
+.gameImg:hover {
+    opacity: 0.5;
+}
 
 .startContainer {
     display: flex;
@@ -23,12 +27,13 @@
     text-align: center;
 }
 
-#start {
+.button {
     border: 3px solid black;
     padding: 3px;
+    border-radius: 10px;
 }
 
-#start:hover {
+.button:hover {
     text-decoration: underline;
     border: 3px solid red;
     color: red;
