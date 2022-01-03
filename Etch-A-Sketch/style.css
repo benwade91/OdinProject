@@ -1,0 +1,8 @@
+.board{
+    width: 30vw;
+    display: grid;
+}
+.gameCell{
+    /* height: calc(30vw / 4); */
+    border: 2px solid black;
+}
