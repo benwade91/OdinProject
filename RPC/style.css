@@ -18,6 +18,10 @@
     justify-content: center;
 }
 
+#start{
+    margin-top: 45vh;
+}
+
 .scoreBoard {
     display: flex;
     justify-content: space-evenly;
