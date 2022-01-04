@@ -1,8 +1,24 @@
+.titleBox{
+    text-align: center;
+}
 .board{
-    width: 30vw;
+    width: 35vw;
     display: grid;
+    border: 1px solid black;
+    margin: 0 auto;
 }
 .gameCell{
     /* height: calc(30vw / 4); */
-    border: 2px solid black;
+    /* border: 1px solid black; */
+}
+.controllerDiv{
+    display: flex;
+    justify-content: center;
+}
+.sliderDiv{
+    display: flex;
+    flex-direction: column;
+}
+.control{
+    margin: 15px;
 }
