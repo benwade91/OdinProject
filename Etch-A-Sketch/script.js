@@ -63,7 +63,7 @@ const sliderLabel = document.createElement('span');
 sliderLabel.textContent = 'Slide to change pixel size'
 const slider = document.createElement('input');
 slider.type = 'range';
-slider.min = '20';
+slider.min = '2';
 slider.value = '20';
 slider.max = '80';
 sliderDiv.appendChild(sliderLabel)
