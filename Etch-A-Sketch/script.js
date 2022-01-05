@@ -30,7 +30,6 @@ const color = () => {
 
 // generates sketch grid
 const createBoard = (n) => {
-    console.log(n);
     // check for and remove previous gameboard
     const oldGameCells = document.getElementsByClassName('gameCell');
     while (oldGameCells.length > 0) oldGameCells[0].remove();

@@ -13,9 +13,8 @@ button{
     border: 5px solid black;
     margin: 0 auto;
 }
-.gameCell{
-    /* height: calc(30vw / 4); */
-    /* border: 1px solid black; */
+.gameCell:hover{
+    cursor: crosshair;
 }
 .controllerDiv{
     display: flex;
