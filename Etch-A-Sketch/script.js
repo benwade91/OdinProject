@@ -1,5 +1,5 @@
 const body = document.querySelector('body');
-let colorMode = 3
+let colorMode = 1
 
 // generates title
 const titleBox = document.createElement('div');
